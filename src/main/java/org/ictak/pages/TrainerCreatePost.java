@@ -1,7 +1,7 @@
 /**
  * 
  */
-package ictak.org.pages;
+package org.ictak.pages;
 
 /**
  * 
