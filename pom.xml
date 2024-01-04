@@ -3,6 +3,10 @@
   <groupId>project</groupId>
   <artifactId>ictakblog</artifactId>
   <version>0.0.1-SNAPSHOT</version>
+  <properties>
+	  <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+	  <maven.compiler.release>17</maven.compiler.release>
+  </properties>
   <dependencies>
     <dependency>
       <groupId>org.seleniumhq.selenium</groupId>
@@ -14,6 +18,16 @@
       <artifactId>testng</artifactId>
       <version>7.7.1</version>
       <scope>test</scope>
+    </dependency>
+    <dependency>
+        <groupId>org.apache.poi</groupId>
+        <artifactId>poi</artifactId>
+        <version>5.0.0</version>
+    </dependency>
+    <dependency>
+        <groupId>org.apache.poi</groupId>
+        <artifactId>poi-ooxml</artifactId>
+        <version>5.0.0</version>
     </dependency>
   </dependencies>
 </project>
