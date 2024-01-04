@@ -1,3 +1,4 @@
 target/
 test-output/
 src/main/resources/
+*.class
