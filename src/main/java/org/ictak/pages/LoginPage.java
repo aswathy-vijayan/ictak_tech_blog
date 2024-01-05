@@ -31,7 +31,7 @@ public class LoginPage {
     
     public String ConfirmLog() {
 		return driver.findElement(By.xpath("//h2")).getText();
-		}
+	}
     
     public String getError() { 
 		return(driver.switchTo().alert().getText());}

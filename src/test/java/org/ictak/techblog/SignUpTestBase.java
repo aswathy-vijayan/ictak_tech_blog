@@ -10,12 +10,10 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.annotations.AfterMethod;
-import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeSuite;
-import org.testng.annotations.BeforeTest;
 
-public class LoginTestBase {
+public class SignUpTestBase {
 	
 	WebDriver driver;
 	public static Properties prop=null;
@@ -23,12 +21,10 @@ public class LoginTestBase {
 	@BeforeMethod
 	public void setup() throws IOException {
 		prop=new Properties();
-		FileInputStream ip=new FileInputStream("C:\\Users\\Nithin Shaji\\eclipse-workspace\\ictproject\\ictak_tech_blog\\src\\test\\resources\\config.properties");
+		FileInputStream ip=new FileInputStream("C:\\Users\\Nithin Shaji\\eclipse-workspace\\ictproject\\ictak_tech_blog\\src\\test\\resources\\config.properties signup");
 		prop.load(ip);
-		
 //		driver = new ChromeDriver();
 //		driver.get(prop.getProperty("url"));
-		
 		String browserName = prop.getProperty("browser");
 		if (browserName.equalsIgnoreCase("chrome")) {
 			driver = new ChromeDriver();
@@ -41,6 +37,7 @@ public class LoginTestBase {
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 		driver.manage().window().maximize();
 		}
+	
 	@BeforeSuite
     public void excelSetup() throws IOException {
         String excelFilePath = "C:\\Users\\Nithin Shaji\\eclipse-workspace\\ictproject\\ictak_tech_blog\\src\\main\\resources\\TestData.xlsx";

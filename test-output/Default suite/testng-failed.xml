@@ -3,17 +3,19 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="ictaktechblog.LoginTestClass">
+      <class name="org.ictak.techblog.LoginTestClass">
         <methods>
+          <include name="setup"/>
+          <include name="excelSetup"/>
+          <include name="Invalidemailloginpage"/>
           <include name="Invalidpasswordloginpage"/>
           <include name="Validadminloginpage"/>
-          <include name="setup"/>
-          <include name="Invalidemailloginpage"/>
-          <include name="blankloginpage"/>
           <include name="Validtrainerloginpage"/>
-          <include name="excelSetup"/>
+          <include name="validLogin"/>
+          <include name="blankloginpage"/>
+          <include name="closing"/>
         </methods>
-      </class> <!-- ictaktechblog.LoginTestClass -->
+      </class> <!-- org.ictak.techblog.LoginTestClass -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
