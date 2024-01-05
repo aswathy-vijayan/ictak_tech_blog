@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Default test(failed)">
+    <classes>
+      <class name="org.ictak.techblog.AdminFunctionalityTestClass">
+        <methods>
+          <include name="allpostedit"/>
+          <include name="addnewpost"/>
+          <include name="editingcategories"/>
+          <include name="contact"/>
+          <include name="setup"/>
+          <include name="categories"/>
+        </methods>
+      </class> <!-- org.ictak.techblog.AdminFunctionalityTestClass -->
+    </classes>
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->
