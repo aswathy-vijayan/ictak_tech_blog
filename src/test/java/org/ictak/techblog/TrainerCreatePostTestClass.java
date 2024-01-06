@@ -1,8 +1,13 @@
 package org.ictak.techblog;
 
+import java.time.Duration;
+
 import org.ictak.constants.AutomationConstants;
 import org.ictak.pages.TrainerCreatePost;
+import org.ictak.utilities.CaptureScreenshot;
+import org.openqa.selenium.By;
 import org.testng.Assert;
+import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
 public class TrainerCreatePostTestClass extends TrainerTestBase {
@@ -49,6 +54,7 @@ public class TrainerCreatePostTestClass extends TrainerTestBase {
 	@Test(priority = 4)
 	public void createPostWithInvalidImage() throws InterruptedException {
 		obj = new TrainerCreatePost(driver);
+		ss = new CaptureScreenshot(driver);
 		obj.setTitle(AutomationConstants.postTitle);
 		obj.setCategory(AutomationConstants.category);
 		obj.setImage(AutomationConstants.invalidImageUrl);
@@ -57,6 +63,8 @@ public class TrainerCreatePostTestClass extends TrainerTestBase {
 		String alertText = obj.getAlertText();
 		if (alertText.length() > 0) {
 			obj.alertClickAccept();
+			// Warning: Cannot take screenshot with alert open
+			ss.captureScreenshot("trainer-createPostWithInvalidImage");
 			obj.gotoCreatePost();
 		}
 		Assert.assertEquals(alertText, "");
@@ -98,5 +106,12 @@ public class TrainerCreatePostTestClass extends TrainerTestBase {
 		obj.alertClickAccept();
 		Assert.assertEquals(actualAlertMessage, expectedAlertMessage);
 
+	}
+
+	@BeforeTest
+	public void secondBeforeTestCase() {
+		// Go to new posts page
+		driver.findElement(By.xpath("//a[@id='nav' and text()='New post']")).click();
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 	}
 }

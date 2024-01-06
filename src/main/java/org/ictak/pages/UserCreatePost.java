@@ -63,7 +63,7 @@ public class UserCreatePost {
 
 	public void clickSubmit() throws InterruptedException {
 		Thread.sleep(1000);
-		WebElement submitBtn = driver.findElement(By.name("p_post"));
+		WebElement submitBtn = driver.findElement(By.xpath("//button[@type='submit']"));
 		if (submitBtn.isEnabled()) {
 			JavascriptExecutor executor = (JavascriptExecutor) driver;
 			executor.executeScript("arguments[0].click();", submitBtn);
@@ -72,15 +72,16 @@ public class UserCreatePost {
 	}
 
 	public String getAlertText() throws InterruptedException {
+		Thread.sleep(3000);
 		try {
-			Thread.sleep(2000);
 			return driver.switchTo().alert().getText();
 		} catch (NoAlertPresentException e) {
 			return "";
 		}
 	}
 
-	public void alertClickAccept() {
+	public void alertClickAccept() throws InterruptedException {
+		Thread.sleep(2000);
 		driver.switchTo().alert().accept();
 	}
 

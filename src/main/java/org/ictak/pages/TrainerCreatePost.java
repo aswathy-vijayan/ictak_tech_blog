@@ -73,8 +73,8 @@ public class TrainerCreatePost {
 	}
 
 	public String getAlertText() throws InterruptedException {
+		Thread.sleep(2000);
 		try {
-			Thread.sleep(2000);
 			return driver.switchTo().alert().getText();
 		} catch (NoAlertPresentException e) {
 			return "";

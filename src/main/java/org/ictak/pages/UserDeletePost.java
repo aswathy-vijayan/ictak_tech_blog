@@ -13,9 +13,8 @@ public class UserDeletePost {
 	}
 
 	public void deletePost() throws InterruptedException {
+		Thread.sleep(3000);
 		WebElement deleteBtn = driver.findElement(By.xpath("(//button[text()='Delete'])[last()]"));
-		Thread.sleep(4000);
-
 		JavascriptExecutor executor = (JavascriptExecutor) driver;
 		executor.executeScript("arguments[0].click();", deleteBtn);
 

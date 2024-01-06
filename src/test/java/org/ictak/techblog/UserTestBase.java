@@ -5,6 +5,7 @@ import java.io.IOException;
 import java.time.Duration;
 import java.util.Properties;
 
+import org.ictak.utilities.CaptureScreenshot;
 import org.ictak.utilities.ExcelUtility;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -12,6 +13,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.testng.annotations.AfterSuite;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeSuite;
@@ -19,6 +21,7 @@ import org.testng.annotations.BeforeTest;
 
 public class UserTestBase {
 	WebDriver driver;
+	CaptureScreenshot ss = null;
 	public static Properties prop = null;
 
 	@BeforeSuite
@@ -58,18 +61,21 @@ public class UserTestBase {
 		loginButtonElement = driver.findElement(By.id("logbut"));
 		loginButtonElement.click();
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
-		// Go to new posts page
-		driver.findElement(By.xpath("//a[@id='nav' and text()='New post']")).click();
-		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
 	}
 
 	@BeforeMethod
 	public void beforeTest() {
 		driver.navigate().refresh();
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
 	}
 
 	@AfterTest
 	public void afterTestCase() {
 		driver.findElement(By.xpath("//a[@id='nav' and text()='logout']")).click();
+	}
+
+	@AfterSuite
+	public void afterTestSuite() {
+		driver.quit();
 	}
 }

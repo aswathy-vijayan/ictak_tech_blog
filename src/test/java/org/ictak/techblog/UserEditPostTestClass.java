@@ -1,11 +1,18 @@
 package org.ictak.techblog;
 
+import java.time.Duration;
+
 import org.ictak.constants.AutomationConstants;
 import org.ictak.pages.UserEditPost;
+import org.ictak.utilities.CaptureScreenshot;
+import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.WebElement;
 import org.testng.Assert;
+import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
-public class UserEditPostTestClass extends UserEditTestBase {
+public class UserEditPostTestClass extends UserTestBase {
 	UserEditPost obj = null;
 
 	@Test(priority = 1)
@@ -41,11 +48,14 @@ public class UserEditPostTestClass extends UserEditTestBase {
 	@Test(priority = 4)
 	public void editPostWithInvalidImage() throws InterruptedException {
 		obj = new UserEditPost(driver);
+		ss = new CaptureScreenshot(driver);
 		obj.changeImage(AutomationConstants.invalidImageUrlNew);
 		obj.clickSubmit();
 		String alertText = obj.getAlertText();
 		if (alertText.length() > 0) {
 			obj.alertClickAccept();
+			// Warning: Cannot take screenshot with alert open
+			ss.captureScreenshot("user-editPostWithInvalidImage");
 			obj.gotoEditPost();
 		}
 		Assert.assertEquals(alertText, "");
@@ -71,5 +81,18 @@ public class UserEditPostTestClass extends UserEditTestBase {
 		String actualAlertMessage = obj.getAlertText();
 		obj.alertClickAccept();
 		Assert.assertEquals(actualAlertMessage, expectedAlertMessage);
+	}
+
+	@BeforeTest
+	public void secondBeforeTestCase() {
+		// Go to new posts page
+		driver.findElement(By.xpath("//a[@id='nav' and text()='My posts']")).click();
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
+
+		// Click edit button of last post
+		WebElement editButton = driver.findElement(By.xpath("(//button[text()='Edit'])[last()]"));
+		JavascriptExecutor executor = (JavascriptExecutor) driver;
+		executor.executeScript("arguments[0].click();", editButton);
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 	}
 }
