@@ -30,7 +30,7 @@ public class TrainerEditPost {
 	}
 
 	public void changeTitle(String title) {
-		WebElement titleElement = driver.findElement(By.xpath("//input[@name=\"P_title\"]"));
+		WebElement titleElement = driver.findElement(By.name("P_title"));
 		titleElement.clear();
 		titleElement.sendKeys(title);
 		titleElement.sendKeys(Keys.SPACE, Keys.BACK_SPACE);
@@ -38,21 +38,21 @@ public class TrainerEditPost {
 	}
 
 	public void changeAuthor(String authorName) {
-		WebElement authorField = driver.findElement(By.xpath("//input[@name=\"P_author\"]"));
+		WebElement authorField = driver.findElement(By.name("P_author"));
 		authorField.clear();
 		authorField.sendKeys(authorName);
 		authorField.sendKeys(Keys.SPACE, Keys.BACK_SPACE);
 	}
 
 	public void changeImage(String imageUrl) {
-		WebElement imageField = driver.findElement(By.xpath("//input[@name=\"P_image\"]"));
+		WebElement imageField = driver.findElement(By.name("P_image"));
 		imageField.clear();
 		imageField.sendKeys(imageUrl);
 		imageField.sendKeys(Keys.SPACE, Keys.BACK_SPACE);
 	}
 
 	public void changePostContent(String content) {
-		WebElement postContentElement = driver.findElement(By.xpath("//textarea[@name=\"p_post\"]"));
+		WebElement postContentElement = driver.findElement(By.name("p_post"));
 		postContentElement.clear();
 		postContentElement.sendKeys(content);
 		postContentElement.sendKeys(Keys.SPACE, Keys.BACK_SPACE);

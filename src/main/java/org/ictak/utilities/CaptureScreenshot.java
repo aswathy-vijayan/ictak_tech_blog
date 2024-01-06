@@ -29,7 +29,6 @@ public class CaptureScreenshot {
 			FileUtils.copyFile(source, new File(destination));
 			System.out.println("Screenshot captured at: " + destination);
 		} catch (Exception e) {
-			System.out.println(e.getMessage());
 			System.out.println("Failed to capture screenshot: " + e.getMessage());
 		}
 	}
