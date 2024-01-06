@@ -4,7 +4,7 @@ public class AutomationConstants {
 	public static String postTitle = "Sample test title";
 	public static String imageUrl = "https://archive.org/download/placeholder-image/placeholder-image.jpg";
 	public static String invalidImageUrl = "https://example.com/placeholder-image.jpg";
-	public static String category = "JENKINS";
+	public static String category = "JIRA";
 	public static String postContent = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut egestas, sem eu lobortis suscipit, justo mi maximus leo, eget accumsan metus metus id neque.";
 
 	public static String postTitleNew = "New sample test title";

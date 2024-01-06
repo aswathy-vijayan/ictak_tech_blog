@@ -16,13 +16,16 @@ public class TrainerEditPost {
 		this.driver = d;
 	}
 
-	public void gotoEditPost() {
+	public void gotoEditPost() throws InterruptedException {
 		// Go to my posts page
 		driver.findElement(By.xpath("//a[@id='nav' and text()='My posts']")).click();
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
 		// Click edit button of last post
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
-		driver.findElement(By.xpath("(//button[text()='Edit'])[last()]")).click();
+
+		WebElement EditBtn = driver.findElement(By.xpath("(//button[text()='Edit'])[last()]"));
+		JavascriptExecutor executor = (JavascriptExecutor) driver;
+		executor.executeScript("arguments[0].click();", EditBtn);
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
 	}
 
@@ -65,8 +68,9 @@ public class TrainerEditPost {
 
 	}
 
-	public String getAlertText() {
+	public String getAlertText() throws InterruptedException {
 		try {
+			Thread.sleep(3000);
 			return driver.switchTo().alert().getText();
 		} catch (NoAlertPresentException e) {
 			return "";

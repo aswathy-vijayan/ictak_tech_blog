@@ -11,6 +11,8 @@ import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.edge.EdgeDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeSuite;
@@ -32,7 +34,14 @@ public class TrainerEditTestBase {
 		FileInputStream props = new FileInputStream("src\\test\\resources\\config.properties");
 		prop.load(props);
 
-		driver = new ChromeDriver();
+		String browserName = prop.getProperty("browser");
+		if (browserName.equalsIgnoreCase("chrome")) {
+			driver = new ChromeDriver();
+		} else if (browserName.equalsIgnoreCase("firefox")) {
+			driver = new FirefoxDriver();
+		} else if (browserName.equalsIgnoreCase("edge")) {
+			driver = new EdgeDriver();
+		}
 		driver.manage().window().maximize();
 		WebElement usernameElement, passwordElement, loginButtonElement;
 		// Login to the trainer account

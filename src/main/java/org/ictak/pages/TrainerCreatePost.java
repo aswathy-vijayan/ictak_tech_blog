@@ -24,8 +24,8 @@ public class TrainerCreatePost {
 	}
 
 	public void gotoCreatePost() {
-		// Go to My posts page
-		driver.findElement(By.xpath("//a[@id='nav' and text()='My posts']")).click();
+		// Go to new post page
+		driver.findElement(By.xpath("//a[@id='nav' and text()='New post']")).click();
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 	}
 
@@ -72,8 +72,9 @@ public class TrainerCreatePost {
 
 	}
 
-	public String getAlertText() {
+	public String getAlertText() throws InterruptedException {
 		try {
+			Thread.sleep(2000);
 			return driver.switchTo().alert().getText();
 		} catch (NoAlertPresentException e) {
 			return "";

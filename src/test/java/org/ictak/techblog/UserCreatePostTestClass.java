@@ -1,16 +1,16 @@
 package org.ictak.techblog;
 
 import org.ictak.constants.AutomationConstants;
-import org.ictak.pages.TrainerCreatePost;
+import org.ictak.pages.UserCreatePost;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-public class TrainerCreatePostTestCase extends TrainerTestBase {
-	TrainerCreatePost obj = null;
+public class UserCreatePostTestClass extends UserTestBase {
+	UserCreatePost obj = null;
 
-	@Test(priority = 5)
+	@Test(priority = 1)
 	public void createPostWithBlankTitle() throws InterruptedException {
-		obj = new TrainerCreatePost(driver);
+		obj = new UserCreatePost(driver);
 		obj.setCategory(AutomationConstants.category);
 		obj.setImage(AutomationConstants.imageUrl);
 		obj.setPostContent(AutomationConstants.postContent);
@@ -20,7 +20,7 @@ public class TrainerCreatePostTestCase extends TrainerTestBase {
 
 	@Test(priority = 2)
 	public void createPostWithBlankAuthor() throws InterruptedException {
-		obj = new TrainerCreatePost(driver);
+		obj = new UserCreatePost(driver);
 		obj.setTitle(AutomationConstants.postTitle);
 		obj.setAuthor("");
 		obj.setCategory(AutomationConstants.category);
@@ -28,14 +28,14 @@ public class TrainerCreatePostTestCase extends TrainerTestBase {
 		obj.setPostContent(AutomationConstants.postContent);
 		obj.clickSubmit();
 		Assert.assertEquals(obj.getAlertText(), "");
+
 	}
 
 	@Test(priority = 3)
 	public void createPostWithBlankImage() throws InterruptedException {
-		obj = new TrainerCreatePost(driver);
+		obj = new UserCreatePost(driver);
 		obj.setTitle(AutomationConstants.postTitle);
 		obj.setCategory(AutomationConstants.category);
-		obj.setImage("");
 		obj.setPostContent(AutomationConstants.postContent);
 		obj.clickSubmit();
 		String alertText = obj.getAlertText();
@@ -48,7 +48,7 @@ public class TrainerCreatePostTestCase extends TrainerTestBase {
 
 	@Test(priority = 4)
 	public void createPostWithInvalidImage() throws InterruptedException {
-		obj = new TrainerCreatePost(driver);
+		obj = new UserCreatePost(driver);
 		obj.setTitle(AutomationConstants.postTitle);
 		obj.setCategory(AutomationConstants.category);
 		obj.setImage(AutomationConstants.invalidImageUrl);
@@ -62,10 +62,9 @@ public class TrainerCreatePostTestCase extends TrainerTestBase {
 		Assert.assertEquals(alertText, "");
 	}
 
-	@Test(priority = 1)
+	@Test(priority = 5)
 	public void createPostWithBlankCategory() throws InterruptedException {
-		obj = new TrainerCreatePost(driver);
-		Thread.sleep(3000);
+		obj = new UserCreatePost(driver);
 		obj.setTitle(AutomationConstants.postTitle);
 		obj.setImage(AutomationConstants.imageUrl);
 		obj.setPostContent(AutomationConstants.postContent);
@@ -75,28 +74,26 @@ public class TrainerCreatePostTestCase extends TrainerTestBase {
 
 	@Test(priority = 6)
 	public void createPostWithBlankPostContent() throws InterruptedException {
-		obj = new TrainerCreatePost(driver);
+		obj = new UserCreatePost(driver);
 		obj.setTitle(AutomationConstants.postTitle);
 		obj.setCategory(AutomationConstants.category);
 		obj.setImage(AutomationConstants.imageUrl);
-		obj.setPostContent("");
 		obj.clickSubmit();
 		Assert.assertEquals(obj.getAlertText(), "");
 	}
 
 	@Test(priority = 7)
 	public void createPostWithValidValues() throws InterruptedException {
-		obj = new TrainerCreatePost(driver);
+		obj = new UserCreatePost(driver);
 		obj.setTitle(AutomationConstants.postTitle);
 		obj.setCategory(AutomationConstants.category);
 		obj.setImage(AutomationConstants.imageUrl);
 		obj.setPostContent(AutomationConstants.postContent);
 		obj.clickSubmit();
 		Thread.sleep(1000);
-		String expectedAlertMessage = AutomationConstants.trainerPostSuccessMessage;
+		String expectedAlertMessage = AutomationConstants.userPostSuccessMessage;
 		String actualAlertMessage = obj.getAlertText();
 		obj.alertClickAccept();
 		Assert.assertEquals(actualAlertMessage, expectedAlertMessage);
-
 	}
 }
