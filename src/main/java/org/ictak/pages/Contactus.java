@@ -1,8 +1,13 @@
 package org.ictak.pages;
 
+import java.time.Duration;
+
 import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class Contactus {
 	WebDriver driver;
@@ -23,8 +28,11 @@ public class Contactus {
 			driver.findElement(email).sendKeys("arya05@gmail.com");
 			Thread.sleep(1000);
 			driver.findElement(message).sendKeys("HI...");
-			Thread.sleep(1000);
-			driver.findElement(sendbtn).click();
+			WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(30));
+			WebElement element = wait.until(ExpectedConditions.elementToBeClickable(sendbtn));
+			element.click();
+			
+			//driver.findElement(sendbtn).click();
 			Alert oalert=driver.switchTo().alert();
 			oalert.accept();
 		}

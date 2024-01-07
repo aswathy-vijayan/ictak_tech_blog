@@ -25,7 +25,6 @@ WebDriver driver;
 		Thread.sleep(1000);
 		driver.findElement(allpages).click();
 		Thread.sleep(2000);
-//		driver.findElement(alledit).sendKeys(Keys.PAGE_DOWN);
 		WebElement editBtn = driver.findElement(alledit);
 		Commons.scrollUntilVisible(driver, editBtn);
 		Thread.sleep(1000);
@@ -34,9 +33,14 @@ WebDriver driver;
 	
 	public void clickDeleteButton() throws InterruptedException {
 		Thread.sleep(5000);
+		
 		driver.findElement(allpages).click();
 		Thread.sleep(2000);
-        driver.findElement(allpostdelete).click();;
+		WebElement deltBtn = driver.findElement(allpostdelete);
+		Commons.scrollUntilVisible(driver, deltBtn);
+		Thread.sleep(1000);
+		deltBtn.click();
+        driver.findElement(allpostdelete).click();
         
 }
 

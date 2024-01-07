@@ -30,7 +30,9 @@ public void pendingApproval() throws InterruptedException
 }
 	
 	public void rejectApproval() throws InterruptedException
-	{   driver.findElement(actionsdropdown).click();
+	{
+		Thread.sleep(2000);
+		driver.findElement(actionsdropdown).click();
 	    Thread.sleep(1000);
 	    driver.findElement(pendingapproval).click();
 	    Thread.sleep(1000);

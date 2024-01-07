@@ -20,8 +20,8 @@ public class AddOrRemove {
 		Thread.sleep(1000);
 		driver.findElement(addorremove).click();
 		Thread.sleep(1000);
-		driver.findElement(addnewcategory).sendKeys("WWWWW");
-		Thread.sleep(1000);
+		driver.findElement(addnewcategory).sendKeys("AGILE");
+		Thread.sleep(3000);
 		driver.findElement(addbtn).click();
 		Thread.sleep(1000);
 		Alert oalert=driver.switchTo().alert();

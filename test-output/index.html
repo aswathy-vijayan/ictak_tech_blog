@@ -25,7 +25,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite, 5 failed tests</span>
+      <span class="top-banner-font-1">1 suite, 4 failed tests</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -50,7 +50,7 @@
               <ul>
                 <li>
                   <a href="#" panel-name="test-xml-Default_suite" class="navigator-link ">
-                    <span>C:\Users\Mohammed Aslam\AppData\Local\Temp\testng-eclipse--2129130791\testng-customsuite.xml</span>
+                    <span>C:\Users\Mohammed Aslam\AppData\Local\Temp\testng-eclipse--171701643\testng-customsuite.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -92,7 +92,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">13 methods, 5 failed,   8 passed</span>
+                    <span class="method-stats">13 methods, 4 failed,   9 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title failed">Failed methods</span>
@@ -103,22 +103,17 @@
                     <div class="method-list-content failed suite-Default_suite">
                       <span>
                         <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="org.ictak.techblog.AdminFunctionalityTestClass" class="method navigator-link" hash-for-method="Mypost">Mypost</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
                         <a href="#" panel-name="suite-Default_suite" title="org.ictak.techblog.AdminFunctionalityTestClass" class="method navigator-link" hash-for-method="addnewpost">addnewpost</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="org.ictak.techblog.AdminFunctionalityTestClass" class="method navigator-link" hash-for-method="allpostedit">allpostedit</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="org.ictak.techblog.AdminFunctionalityTestClass" class="method navigator-link" hash-for-method="categories">categories</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="org.ictak.techblog.AdminFunctionalityTestClass" class="method navigator-link" hash-for-method="contact">contact</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Default_suite" title="org.ictak.techblog.AdminFunctionalityTestClass" class="method navigator-link" hash-for-method="editMypost">editMypost</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
@@ -135,11 +130,6 @@
                       <a href="#" panel-name="suite-Default_suite" class="show-methods passed suite-Default_suite"> (show)</a> <!-- show-methods passed suite-Default_suite -->
                     </span>
                     <div class="method-list-content passed suite-Default_suite">
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="org.ictak.techblog.AdminFunctionalityTestClass" class="method navigator-link" hash-for-method="Mypost">Mypost</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-Default_suite" title="org.ictak.techblog.AdminFunctionalityTestClass" class="method navigator-link" hash-for-method="about">about</a> <!-- method navigator-link -->
@@ -162,7 +152,17 @@
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="org.ictak.techblog.AdminFunctionalityTestClass" class="method navigator-link" hash-for-method="editMypost">editMypost</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Default_suite" title="org.ictak.techblog.AdminFunctionalityTestClass" class="method navigator-link" hash-for-method="allpostedit">allpostedit</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="org.ictak.techblog.AdminFunctionalityTestClass" class="method navigator-link" hash-for-method="categories">categories</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="org.ictak.techblog.AdminFunctionalityTestClass" class="method navigator-link" hash-for-method="contact">contact</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
@@ -195,73 +195,77 @@
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
+                  <a name="Mypost">
+                  </a> <!-- Mypost -->
+                  <span class="method-name">Mypost</span>
+                  <div class="stack-trace">org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element is not clickable at point (514, -32)
+  (Session info: chrome=109.0.5414.168)
+Build info: version: &apos;4.15.0&apos;, revision: &apos;1d14b5521b&apos;
+System info: os.name: &apos;Windows 8.1&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.3&apos;, java.version: &apos;21&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [764e879d199c41336e8a2dc5767f9f9e, clickElement {id=e2bb23ae-1e1b-4c8d-b076-f36c50da4ae1}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 109.0.5414.168, chrome: {chromedriverVersion: 109.0.5414.74 (e7c5703604da..., userDataDir: C:\Users\MOHAMM~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:59321}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:59321/devtoo..., se:cdpVersion: 109.0.5414.168, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (764e879d199c41336e8a2dc5767f9f9e)] -&gt; xpath: //a[text()=&apos;My posts&apos;]]
+Session ID: 764e879d199c41336e8a2dc5767f9f9e
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:607)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:224)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)
+	at org.ictak.pages.MyPost.editMyPost(MyPost.java:30)
+	at org.ictak.techblog.AdminFunctionalityTestClass.Mypost(AdminFunctionalityTestClass.java:81)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:829)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+	at org.testng.TestNG.runSuites(TestNG.java:1099)
+	at org.testng.TestNG.run(TestNG.java:1067)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
                   <a name="addnewpost">
                   </a> <!-- addnewpost -->
                   <span class="method-name">addnewpost</span>
-                  <div class="stack-trace">org.openqa.selenium.UnhandledAlertException: unexpected alert open: {Alert text : New Post Added}
-  (Session info: chrome=109.0.5414.168): New Post Added
-Build info: version: &apos;4.15.0&apos;, revision: &apos;1d14b5521b&apos;
-System info: os.name: &apos;Windows 8.1&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.3&apos;, java.version: &apos;21&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [e09b049afddabe96bc907cc30d631c72, findElement {using=xpath, value=//button[@type=&apos;submit&apos;]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 109.0.5414.168, chrome: {chromedriverVersion: 109.0.5414.74 (e7c5703604da..., userDataDir: C:\Users\MOHAMM~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:51177}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:51177/devtoo..., se:cdpVersion: 109.0.5414.168, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: e09b049afddabe96bc907cc30d631c72
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:131)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:607)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:364)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:358)
-	at org.ictak.pages.AddNewPost.addingnewpost(AddNewPost.java:45)
-	at org.ictak.techblog.AdminFunctionalityTestClass.addnewpost(AdminFunctionalityTestClass.java:120)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
-	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-	at org.testng.TestRunner.privateRun(TestRunner.java:829)
-	at org.testng.TestRunner.run(TestRunner.java:602)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:330)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
-	at org.testng.TestNG.runSuites(TestNG.java:1099)
-	at org.testng.TestNG.run(TestNG.java:1067)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-
-</div> <!-- stack-trace -->
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="allpostedit">
-                  </a> <!-- allpostedit -->
-                  <span class="method-name">allpostedit</span>
-                  <div class="stack-trace">org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element is not clickable at point (435, -341)
+                  <div class="stack-trace">org.openqa.selenium.StaleElementReferenceException: stale element reference: element is not attached to the page document
   (Session info: chrome=109.0.5414.168)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
 Build info: version: &apos;4.15.0&apos;, revision: &apos;1d14b5521b&apos;
 System info: os.name: &apos;Windows 8.1&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.3&apos;, java.version: &apos;21&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [e09b049afddabe96bc907cc30d631c72, clickElement {id=01b2f662-d564-45d4-aeab-40f977e5a69b}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 109.0.5414.168, chrome: {chromedriverVersion: 109.0.5414.74 (e7c5703604da..., userDataDir: C:\Users\MOHAMM~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:51177}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:51177/devtoo..., se:cdpVersion: 109.0.5414.168, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on windows (e09b049afddabe96bc907cc30d631c72)] -&gt; xpath: (//a[@id=&apos;nav&apos;])[2]]
-Session ID: e09b049afddabe96bc907cc30d631c72
+Command: [764e879d199c41336e8a2dc5767f9f9e, clickElement {id=168eceb8-0c7f-4562-91f1-1af020a17ffe}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 109.0.5414.168, chrome: {chromedriverVersion: 109.0.5414.74 (e7c5703604da..., userDataDir: C:\Users\MOHAMM~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:59321}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:59321/devtoo..., se:cdpVersion: 109.0.5414.168, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (764e879d199c41336e8a2dc5767f9f9e)] -&gt; id: navbarDropdown]
+Session ID: 764e879d199c41336e8a2dc5767f9f9e
 	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
 	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
 	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
@@ -274,8 +278,8 @@ Session ID: e09b049afddabe96bc907cc30d631c72
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:607)
 	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:224)
 	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)
-	at org.ictak.pages.AllPost.clickDeleteButton(AllPost.java:37)
-	at org.ictak.techblog.AdminFunctionalityTestClass.allpostedit(AdminFunctionalityTestClass.java:68)
+	at org.ictak.pages.AddNewPost.addingnewpost(AddNewPost.java:58)
+	at org.ictak.techblog.AdminFunctionalityTestClass.addnewpost(AdminFunctionalityTestClass.java:127)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
@@ -308,18 +312,18 @@ Session ID: e09b049afddabe96bc907cc30d631c72
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="categories">
-                  </a> <!-- categories -->
-                  <span class="method-name">categories</span>
-                  <div class="stack-trace">org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element is not clickable at point (686, -399)
+                  <a name="editMypost">
+                  </a> <!-- editMypost -->
+                  <span class="method-name">editMypost</span>
+                  <div class="stack-trace">org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element is not clickable at point (514, -27)
   (Session info: chrome=109.0.5414.168)
 Build info: version: &apos;4.15.0&apos;, revision: &apos;1d14b5521b&apos;
 System info: os.name: &apos;Windows 8.1&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.3&apos;, java.version: &apos;21&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [e09b049afddabe96bc907cc30d631c72, clickElement {id=29640660-10e7-4ce0-a24f-698eb79abbe5}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 109.0.5414.168, chrome: {chromedriverVersion: 109.0.5414.74 (e7c5703604da..., userDataDir: C:\Users\MOHAMM~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:51177}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:51177/devtoo..., se:cdpVersion: 109.0.5414.168, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on windows (e09b049afddabe96bc907cc30d631c72)] -&gt; xpath: //p[text()=&apos;Categories&apos;]]
-Session ID: e09b049afddabe96bc907cc30d631c72
+Command: [764e879d199c41336e8a2dc5767f9f9e, clickElement {id=e2bb23ae-1e1b-4c8d-b076-f36c50da4ae1}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 109.0.5414.168, chrome: {chromedriverVersion: 109.0.5414.74 (e7c5703604da..., userDataDir: C:\Users\MOHAMM~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:59321}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:59321/devtoo..., se:cdpVersion: 109.0.5414.168, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (764e879d199c41336e8a2dc5767f9f9e)] -&gt; xpath: //a[text()=&apos;My posts&apos;]]
+Session ID: 764e879d199c41336e8a2dc5767f9f9e
 	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
 	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
 	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
@@ -332,61 +336,8 @@ Session ID: e09b049afddabe96bc907cc30d631c72
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:607)
 	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:224)
 	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)
-	at org.ictak.pages.Categories.CategoriesEdit(Categories.java:28)
-	at org.ictak.techblog.AdminFunctionalityTestClass.categories(AdminFunctionalityTestClass.java:127)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
-	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-	at org.testng.TestRunner.privateRun(TestRunner.java:829)
-	at org.testng.TestRunner.run(TestRunner.java:602)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:330)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
-	at org.testng.TestNG.runSuites(TestNG.java:1099)
-	at org.testng.TestNG.run(TestNG.java:1067)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-
-</div> <!-- stack-trace -->
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="contact">
-                  </a> <!-- contact -->
-                  <span class="method-name">contact</span>
-                  <div class="stack-trace">org.openqa.selenium.UnhandledAlertException: unexpected alert open: {Alert text : Message is send successfully}
-  (Session info: chrome=109.0.5414.168): Message is send successfully
-Build info: version: &apos;4.15.0&apos;, revision: &apos;1d14b5521b&apos;
-System info: os.name: &apos;Windows 8.1&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.3&apos;, java.version: &apos;21&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [e09b049afddabe96bc907cc30d631c72, getCurrentUrl {}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 109.0.5414.168, chrome: {chromedriverVersion: 109.0.5414.74 (e7c5703604da..., userDataDir: C:\Users\MOHAMM~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:51177}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:51177/devtoo..., se:cdpVersion: 109.0.5414.168, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: e09b049afddabe96bc907cc30d631c72
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:131)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:607)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:680)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:684)
-	at org.openqa.selenium.remote.RemoteWebDriver.getCurrentUrl(RemoteWebDriver.java:321)
-	at org.ictak.techblog.AdminFunctionalityTestClass.contact(AdminFunctionalityTestClass.java:161)
+	at org.ictak.pages.MyPost.deleteMyPost(MyPost.java:46)
+	at org.ictak.techblog.AdminFunctionalityTestClass.editMypost(AdminFunctionalityTestClass.java:93)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
@@ -422,15 +373,15 @@ Session ID: e09b049afddabe96bc907cc30d631c72
                   <a name="editingcategories">
                   </a> <!-- editingcategories -->
                   <span class="method-name">editingcategories</span>
-                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;#exampleInputEmail1&quot;}
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;*[name=&apos;P_image&apos;]&quot;}
   (Session info: chrome=109.0.5414.168)
 For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
 Build info: version: &apos;4.15.0&apos;, revision: &apos;1d14b5521b&apos;
 System info: os.name: &apos;Windows 8.1&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.3&apos;, java.version: &apos;21&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [e09b049afddabe96bc907cc30d631c72, findElement {using=id, value=exampleInputEmail1}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 109.0.5414.168, chrome: {chromedriverVersion: 109.0.5414.74 (e7c5703604da..., userDataDir: C:\Users\MOHAMM~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:51177}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:51177/devtoo..., se:cdpVersion: 109.0.5414.168, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: e09b049afddabe96bc907cc30d631c72
+Command: [764e879d199c41336e8a2dc5767f9f9e, findElement {using=name, value=P_image}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 109.0.5414.168, chrome: {chromedriverVersion: 109.0.5414.74 (e7c5703604da..., userDataDir: C:\Users\MOHAMM~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:59321}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:59321/devtoo..., se:cdpVersion: 109.0.5414.168, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 764e879d199c41336e8a2dc5767f9f9e
 	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
 	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
 	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
@@ -445,8 +396,8 @@ Session ID: e09b049afddabe96bc907cc30d631c72
 	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:364)
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:358)
-	at org.ictak.pages.CategoriesEdit.editCategories(CategoriesEdit.java:22)
-	at org.ictak.techblog.AdminFunctionalityTestClass.editingcategories(AdminFunctionalityTestClass.java:135)
+	at org.ictak.pages.CategoriesEdit.editCategories(CategoriesEdit.java:78)
+	at org.ictak.techblog.AdminFunctionalityTestClass.editingcategories(AdminFunctionalityTestClass.java:146)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
@@ -487,13 +438,6 @@ Session ID: e09b049afddabe96bc907cc30d631c72
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="Mypost">
-                  </a> <!-- Mypost -->
-                  <span class="method-name">Mypost</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
                   <a name="about">
                   </a> <!-- about -->
                   <span class="method-name">about</span>
@@ -522,9 +466,23 @@ Session ID: e09b049afddabe96bc907cc30d631c72
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="editMypost">
-                  </a> <!-- editMypost -->
-                  <span class="method-name">editMypost</span>
+                  <a name="allpostedit">
+                  </a> <!-- allpostedit -->
+                  <span class="method-name">allpostedit</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="categories">
+                  </a> <!-- categories -->
+                  <span class="method-name">categories</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="contact">
+                  </a> <!-- contact -->
+                  <span class="method-name">contact</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
@@ -546,7 +504,7 @@ Session ID: e09b049afddabe96bc907cc30d631c72
         </div> <!-- panel Default_suite -->
         <div panel-name="test-xml-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\Mohammed Aslam\AppData\Local\Temp\testng-eclipse--2129130791\testng-customsuite.xml</span>
+            <span class="header-content">C:\Users\Mohammed Aslam\AppData\Local\Temp\testng-eclipse--171701643\testng-customsuite.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -597,62 +555,62 @@ data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
 data.addRows(13);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'adminRejctcomnt')
+data.setCell(0, 1, 'editingcategories')
 data.setCell(0, 2, 'org.ictak.techblog.AdminFunctionalityTestClass')
-data.setCell(0, 3, 92110);
+data.setCell(0, 3, 104466);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'addnewpost')
+data.setCell(1, 1, 'adminRejctcomnt')
 data.setCell(1, 2, 'org.ictak.techblog.AdminFunctionalityTestClass')
-data.setCell(1, 3, 88400);
+data.setCell(1, 3, 91168);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'editMypost')
+data.setCell(2, 1, 'categories')
 data.setCell(2, 2, 'org.ictak.techblog.AdminFunctionalityTestClass')
-data.setCell(2, 3, 81086);
+data.setCell(2, 3, 71636);
 data.setCell(3, 0, 3)
 data.setCell(3, 1, 'addOrRemove')
 data.setCell(3, 2, 'org.ictak.techblog.AdminFunctionalityTestClass')
-data.setCell(3, 3, 64096);
+data.setCell(3, 3, 70238);
 data.setCell(4, 0, 4)
-data.setCell(4, 1, 'allpostedit')
+data.setCell(4, 1, 'pendingapproval')
 data.setCell(4, 2, 'org.ictak.techblog.AdminFunctionalityTestClass')
-data.setCell(4, 3, 53111);
+data.setCell(4, 3, 65029);
 data.setCell(5, 0, 5)
-data.setCell(5, 1, 'pendingapproval')
+data.setCell(5, 1, 'loginpage')
 data.setCell(5, 2, 'org.ictak.techblog.AdminFunctionalityTestClass')
-data.setCell(5, 3, 50785);
+data.setCell(5, 3, 45557);
 data.setCell(6, 0, 6)
-data.setCell(6, 1, 'loginpage')
+data.setCell(6, 1, 'allpostedit')
 data.setCell(6, 2, 'org.ictak.techblog.AdminFunctionalityTestClass')
-data.setCell(6, 3, 44301);
+data.setCell(6, 3, 21649);
 data.setCell(7, 0, 7)
-data.setCell(7, 1, 'categories')
+data.setCell(7, 1, 'allpages')
 data.setCell(7, 2, 'org.ictak.techblog.AdminFunctionalityTestClass')
-data.setCell(7, 3, 40070);
+data.setCell(7, 3, 20513);
 data.setCell(8, 0, 8)
-data.setCell(8, 1, 'contact')
+data.setCell(8, 1, 'editMypost')
 data.setCell(8, 2, 'org.ictak.techblog.AdminFunctionalityTestClass')
-data.setCell(8, 3, 33617);
+data.setCell(8, 3, 15753);
 data.setCell(9, 0, 9)
-data.setCell(9, 1, 'Mypost')
+data.setCell(9, 1, 'contact')
 data.setCell(9, 2, 'org.ictak.techblog.AdminFunctionalityTestClass')
-data.setCell(9, 3, 30979);
+data.setCell(9, 3, 13086);
 data.setCell(10, 0, 10)
-data.setCell(10, 1, 'editingcategories')
+data.setCell(10, 1, 'Mypost')
 data.setCell(10, 2, 'org.ictak.techblog.AdminFunctionalityTestClass')
-data.setCell(10, 3, 27030);
+data.setCell(10, 3, 11495);
 data.setCell(11, 0, 11)
-data.setCell(11, 1, 'allpages')
+data.setCell(11, 1, 'about')
 data.setCell(11, 2, 'org.ictak.techblog.AdminFunctionalityTestClass')
-data.setCell(11, 3, 19817);
+data.setCell(11, 3, 3436);
 data.setCell(12, 0, 12)
-data.setCell(12, 1, 'about')
+data.setCell(12, 1, 'addnewpost')
 data.setCell(12, 2, 'org.ictak.techblog.AdminFunctionalityTestClass')
-data.setCell(12, 3, 11284);
+data.setCell(12, 3, 1218);
 window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 10 minutes</span>
+              <span class="suite-total-time">Total running time: 8 minutes</span>
               <div id="times-div-Default_suite">
               </div> <!-- times-div-Default_suite -->
             </div> <!-- times-div -->
@@ -685,65 +643,63 @@ return data;
               </div> <!-- configuration-test before -->
               <div class="test-method">
                 <span class="method-name">loginpage</span>
-                <span class="method-start">85548 ms</span>
+                <span class="method-start">76226 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">allpages</span>
-                <span class="method-start">129882 ms</span>
+                <span class="method-start">121967 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">allpostedit</span>
+                <span class="method-start">142491 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
-                <span class="method-name">allpostedit</span>
-                <span class="method-start">149719 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
                 <span class="method-name">Mypost</span>
-                <span class="method-start">203528 ms</span>
+                <span class="method-start">164176 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
+                <img src="failed.png">
+                </img>
                 <span class="method-name">editMypost</span>
-                <span class="method-start">234548 ms</span>
+                <span class="method-start">175705 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">pendingapproval</span>
-                <span class="method-start">315665 ms</span>
+                <span class="method-start">191488 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">adminRejctcomnt</span>
-                <span class="method-start">366486 ms</span>
+                <span class="method-start">256526 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">addOrRemove</span>
-                <span class="method-start">458624 ms</span>
+                <span class="method-start">347746 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">addnewpost</span>
-                <span class="method-start">522731 ms</span>
+                <span class="method-start">418027 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
-                <img src="failed.png">
-                </img>
                 <span class="method-name">categories</span>
-                <span class="method-start">611185 ms</span>
+                <span class="method-start">419287 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">editingcategories</span>
-                <span class="method-start">651289 ms</span>
+                <span class="method-start">490949 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">about</span>
-                <span class="method-start">678335 ms</span>
+                <span class="method-start">595426 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
-                <img src="failed.png">
-                </img>
                 <span class="method-name">contact</span>
-                <span class="method-start">689639 ms</span>
+                <span class="method-start">598874 ms</span>
               </div> <!-- test-method -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

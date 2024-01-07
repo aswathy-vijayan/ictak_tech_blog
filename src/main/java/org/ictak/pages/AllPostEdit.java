@@ -32,9 +32,9 @@ public void AllPostEditing() throws Exception
 	Thread.sleep(1000);
 	driver.findElement(postedited).clear();
 	driver.findElement(postedited).sendKeys("trthggjg");
-	Thread.sleep(1000);
+	Thread.sleep(2000);
 	driver.findElement(submitbtn).click();
-	Thread.sleep(1000);
+	Thread.sleep(2000);
 	Alert oalert = driver.switchTo().alert();
 	oalert.accept();
 }

@@ -14,9 +14,9 @@ public class Action_sApprvlComnt {
 	}
 	public void adminComntToUser() throws InterruptedException {
 		driver.findElement(apprvlcomment).sendKeys("Nice content");	
-		Thread.sleep(1000);
+		Thread.sleep(2000);
 		driver.findElement(sbmtbutn).click();
-		Thread.sleep(1000);
+		Thread.sleep(2000);
 		Alert oalert = driver.switchTo().alert();
 		oalert.accept();
 	}
