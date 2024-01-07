@@ -91,13 +91,13 @@ package org.ictak.utilities;
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.IOException;
+
 import org.apache.poi.ss.usermodel.Cell;
 import org.apache.poi.ss.usermodel.CellType;
 import org.apache.poi.xssf.usermodel.XSSFSheet;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 
 public class ExcelUtility {
-
     private static XSSFSheet ExcelWSheet;
 
     public static void setExcelFile(String path, String sheetName) throws IOException {
@@ -128,4 +128,3 @@ public class ExcelUtility {
         }
     }
 }
-
