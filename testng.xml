@@ -3,7 +3,7 @@
 <suite name="Suite">
   <test thread-count="5" name="Test">
     <classes>
-      <class name="org.ictak.test.TestClass"/>
+      <class name="org.ictak.techblog.AdminFunctionalityTestClass"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->

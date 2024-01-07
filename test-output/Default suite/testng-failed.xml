@@ -3,17 +3,15 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="org.ictak.test.NonRegTestClass">
+      <class name="org.ictak.techblog.AdminFunctionalityTestClass">
         <methods>
-          <include name="closing"/>
-          <include name="about"/>
-          <include name="home"/>
+          <include name="editMypost"/>
+          <include name="addnewpost"/>
+          <include name="editingcategories"/>
+          <include name="Mypost"/>
           <include name="setup"/>
-          <include name="profile"/>
-          <include name="contact"/>
-          <include name="cat"/>
         </methods>
-      </class> <!-- org.ictak.test.NonRegTestClass -->
+      </class> <!-- org.ictak.techblog.AdminFunctionalityTestClass -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
